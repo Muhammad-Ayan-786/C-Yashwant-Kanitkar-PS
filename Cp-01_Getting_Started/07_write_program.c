@@ -31,12 +31,12 @@ int main() {
     scanf("%f", &distance);
 
     float meters = distance * 1000;
-    float feet = distance * 3280.84;
-    float inches = distance * 39370.1;
+    float feet = meters * 3.28084;
+    float inches = feet * 12;
     float centimeters = distance * 100000;
 
     printf("Your Distance in Meters, Feet, Inches, Centimeters:\n");
-    printf("Meters: %.2fm\nFeet: %.2fm\nInches: %.2fi\nCentimeters: %.2fcm\n", meters, feet, inches, centimeters);
+    printf("Meters: %.2f m\nFeet: %.2f f\nInches: %.2f i\nCentimeters: %.2f cm\n", meters, feet, inches, centimeters);
 
     return 0;
 }
