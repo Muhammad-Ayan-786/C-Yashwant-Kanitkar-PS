@@ -212,7 +212,5 @@ int main() {
 
     printf("100s: %d\n50s: %d\n10s: %d\n", hundreds, fiftys, tens);
 
-
-
     return 0;
 }
