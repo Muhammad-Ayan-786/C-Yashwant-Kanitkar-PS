@@ -25,7 +25,6 @@ subject is 100.
 
 (l) If the total selling price of 15 items and the total profit earned on them is input through the keyboard, write a program to find the cost price of one item. 
 
-(m) If a five-digit number is input through the keyboard, write a program to print a new number by adding one to each of its digits. For example if the number that is input is 12391 then the output should be displayed as 23402.
 */
 
 #include <stdio.h>
