@@ -83,23 +83,14 @@
 int main() {
 
     printf("The output of a: \"Garbage Value\" 200 \n");
-
     printf("The output of b: 300 200 \n");
-
     printf("The output of c: 10 20 \n");
-
     printf("The output of d: 3 5 \n");
-
     printf("The output of e: x and y are equal \n");
-
     printf("The output of f: x = 10 y = 10 z = 0 \n");
-
     printf("The output of g: x = 1 50 1 \n");
-
     printf("The output of h: C is Wow \n");
-
     printf("The output of i: a = 15 b = 15 c = 0 \n");
-
     printf("The output of j: 1 20 1 \n");
 
     return 0;
