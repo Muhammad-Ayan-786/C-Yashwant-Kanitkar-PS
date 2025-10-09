@@ -34,18 +34,15 @@ int main() {
     printf("First enter Cost-price & then Selling-price: \n");
     scanf("%f %f", &CP, &SP);
 
-    if (SP > CP)
-    {
+    if (SP > CP) {
         Amount = SP - CP;
         printf("You made a profit of %.2f \n", Amount);
     }
-    else if (SP < CP)
-    {
+    else if (SP < CP) {
         Amount = CP - SP;
         printf("You made a loss of %.2f \n", Amount);
     }
-    else
-    {
+    else {
         printf("Cost-Price: %.2f\nSelling-Price: %.2f\n", CP, SP);
         printf("You made no profit, no loss. \n");
     }
@@ -55,12 +52,10 @@ int main() {
     printf("Enter any integer number: ");
     scanf("%d", &intNum);
 
-    if (intNum % 2 == 0)
-    {
+    if (intNum % 2 == 0) {
         printf("Your number is EVEN \n");
     }
-    else
-    {
+    else {
         printf("Your number is ODD \n");
     }
 
@@ -69,12 +64,10 @@ int main() {
     printf("Enter year: ");
     scanf("%d", &year);
 
-    if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
-    {
+    if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
         printf("Your year '%d' is a leap year. \n", year);
     }
-    else
-    {
+    else {
         printf("Your year '%d' is not a leap year. \n", year);
     }
 
@@ -128,8 +121,7 @@ int main() {
 
     int reverseNum = 0;
 
-    while (checkNum != 0)
-    {
+    while (checkNum != 0) {
         reminder = checkNum % 10;
         reverseNum = (reverseNum * 10) + reminder;
         checkNum = checkNum / 10;
@@ -137,12 +129,10 @@ int main() {
 
     printf("Reverse Number: %d \n", reverseNum);
 
-    if (userNum == reverseNum)
-    {
+    if (userNum == reverseNum) {
         printf("The number is palindromic (reads the same forwards and backwards). \n");
     }
-    else
-    {
+    else {
         printf("The number is not palindromic. (does not reads the same forwards and backwards) \n");
     }
 
