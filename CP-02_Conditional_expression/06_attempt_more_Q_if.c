@@ -49,6 +49,10 @@ The grades are as follows:
 
 Write a program, which will require the user to give values of hardness, carbon content and tensile strength of the steel under consideration and output the grade of the steel. 
 
+
+
+(e) A library charges a fine for every book returned late. For first 5 days the fine is 50 paise, for 6-10 days fine is one rupee and above 10 days fine is 5 rupees. If you return the book after 30 days your membership will be cancelled. Write a program to accept the number of days the member is late to return the book and display the fine or the appropriate message.
+
 */
 
 #include<stdio.h>
@@ -170,37 +174,62 @@ int main() {
         }
     */
 
+    /*
     // <_______ Code for d ... _______>
-    float hardness, tensileStrength, carbonContent;
+        float hardness, tensileStrength, carbonContent;
 
-    printf("Enter the Hardness of the Steel: ");
-    scanf("%f", &hardness);
+        printf("Enter the Hardness of the Steel: ");
+        scanf("%f", &hardness);
 
-    printf("Enter the Tensile Strength of the Steel: ");
-    scanf("%f", &tensileStrength);
+        printf("Enter the Tensile Strength of the Steel: ");
+        scanf("%f", &tensileStrength);
 
-    printf("Enter the Carbon Content of the Steel: ");
-    scanf("%f", &carbonContent);
+        printf("Enter the Carbon Content of the Steel: ");
+        scanf("%f", &carbonContent);
 
-    int cond1 = (hardness > 50);
-    int cond2 = (carbonContent < 0.7);
-    int cond3 = (tensileStrength > 5600);
+        int cond1 = (hardness > 50);
+        int cond2 = (carbonContent < 0.7);
+        int cond3 = (tensileStrength > 5600);
 
-    int totalTrue = cond1 + cond2 + cond3;
+        int totalTrue = cond1 + cond2 + cond3;
 
-    if (totalTrue == 3) {
-        printf("Grade 10\n");
+        if (totalTrue == 3) {
+            printf("Grade 10\n");
+        }
+        else if (totalTrue == 2) {
+            if (cond1 && cond2) printf("Grade 9\n");
+            else if (cond2 && cond3) printf("Grade 8\n");
+            else if (cond1 && cond3) printf("Grade 7\n");
+        }
+        else if (totalTrue == 1) {
+            printf("Grade 6\n");
+        }
+        else {
+            printf("Grade 5\n");
+        }
+    */
+
+    // <_______ Code for e ... _______>
+    int late_days;
+    printf("Enter your extra days: ");
+    scanf("%d", &late_days);
+
+    if (late_days >= 1 && late_days <= 5) {
+        printf("Your have to pay fine of 50 paise. \n");
     }
-    else if (totalTrue == 2) {
-        if (cond1 && cond2) printf("Grade 9\n");
-        else if (cond2 && cond3) printf("Grade 8\n");
-        else if (cond1 && cond3) printf("Grade 7\n");
+    else if (late_days >= 6 && late_days <= 10) {
+        printf("Your have to pay fine of 1 rupee. \n");
     }
-    else if (totalTrue == 1) {
-        printf("Grade 6\n");
+    else if (late_days > 10) {
+        if (late_days > 10 && late_days <= 30) {
+            printf("Your have to pay fine of 5 rupee. \n");
+        }
+        else if (late_days > 30) {
+            printf("We have cancelled your membership. \n");
+        }
     }
     else {
-        printf("Grade 5\n");
+        printf("You don't have to pay any fine. \n");
     }
 
     return 0;
